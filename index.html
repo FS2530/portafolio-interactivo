@@ -11,13 +11,11 @@
 
 <body>
 
-    <!-- LOADER (animación de carga) -->
     <div id="loader">
         <div class="spinner"></div>
         <p class="text-white mt-3">Cargando...</p>
     </div>
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#inicio">
@@ -37,7 +35,6 @@
         </div>
     </nav>
 
-    <!-- INICIO / HERO -->
     <header id="inicio" class="hero text-white">
         <div class="container">
             <div class="row align-items-center">
@@ -54,8 +51,6 @@
             </div>
         </div>
     </header>
-
-    <!-- PROYECTOS: TRANSFORMACIONES 2D -->
     <section id="proyectos" class="py-5">
         <div class="container">
             <h2 class="text-center mb-2">Proyectos</h2>
@@ -86,7 +81,6 @@
         </div>
     </section>
 
-    <!-- TRANSFORMACIONES 3D -->
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-2">Tarjeta 3D</h2>
@@ -118,7 +112,6 @@
         </div>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contacto</h2>
@@ -157,14 +150,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Oculta el loader cuando la página termina de cargar
         window.addEventListener("load", function () {
             setTimeout(function () {
                 document.getElementById("loader").classList.add("oculto");
             }, 1500);
         });
 
-        // Muestra el spinner dentro del botón al enviar
         document.getElementById("formContacto").addEventListener("submit", function (e) {
             e.preventDefault();
             var spinner = document.getElementById("spinnerBoton");
